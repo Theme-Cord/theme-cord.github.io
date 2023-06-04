@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Templates - ThemeCord</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .templates {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .template {
+            width: 300px;
+            background-color: #4e56cb;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .template img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .template h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .template p {
+            font-size: 0.9rem;
+            color: #fff;
+        }
+        .template a {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-color: #65b557;
+            color: #FFF;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .template a:hover{
+            background-color: #1f8c0b;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="index.html">ThemeCord</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.gg/FTK3txBsAS">Discord</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="templates.html">Templates</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Templates</h1>
+
+        <div class="templates">
+            <div class="template">
+                <img src="https://betterdiscord.app/Image/878" alt="Fallout 4 Terminal">
+                <h3>Fallout 4 Terminal</h3>
+                <p class="text-light">By: Bates</p>
+                <hr/>
+                <p>A theme inspired by Fallout 4's terminals!</p>
+                <a href="javascript:c('https://raw.githubusercontent.com/CommandCrafterHD/Fallout4TerminalTheme/main/Fallout4Terminal.theme.css')" class="btn btn-success">get the link</a>
+            </div>
+            <div class="template">
+                <img src="https://camo.githubusercontent.com/d0adf752f369e24870a6a7c505d929dab61ad9debd068b3af610118f588c294e/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3533393138303331363434373939373937342f3732353733373831393031353837323536322f756e6b6e6f776e2e706e67" alt="Couve">
+                <h3>Couve</h3>
+                <p class="text-light">By: Nyria</p>
+                <hr/>
+                <p>A new look to discord</p>
+                <a href="javascript:c('https://nyri4.github.io/Couve/betterdiscord/couve.theme.css')" class="btn btn-success">get the link</a>
+            </div>
+        </div>
+
+        <div class="text-center container mx-auto">
+            <h2>You want to add your templates?</h2>
+            <p>You can! with the this button:</p>
+            <a href="https://github.com/Theme-Cord/theme-cord.github.io/issues" class="btn cta-btn">Add your template</a>
+        </div>
+    </div>
+    <!-- Bootstrap Toast (Dark Theme) -->
+    <div class="toast bg-dark text-white" role="alert" aria-live="polite" aria-atomic="true" data-autohide="false">
+        <div class="toast-header">
+            <img src="https://raw.githubusercontent.com/Theme-Cord/.github/main/avatar2.png" class="rounded mr-2" alt="..." width="16px" height="16px">
+            <strong class="mr-auto">Theme Cord</strong>
+            <small>Just now</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            The theme CSS link was copied to your clipboard. Use the link in the app to apply the theme.
+        </div>
+    </div>
+</body>
+<script>
+      function c(textToCopy) {
+
+            let t = document.createElement("input")
+            // t.style.display = "none"
+            t.value = textToCopy
+            document.documentElement.appendChild(t)
+            t.select();
+            document.execCommand('copy');
+            t.remove();
+            // Show toast
+            const toast = document.querySelector('.toast');
+            const bsToast = new bootstrap.Toast(toast);
+            bsToast.show();
+        }
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+
+</html>
