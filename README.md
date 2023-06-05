@@ -1,1 +1,1 @@
-# ThemeCord.Github.Io
+# Theme-Cord.Github.Io
